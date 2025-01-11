@@ -43,40 +43,40 @@ window.onload = function() {
         let emoji;
         switch (currentMonth) {
             case 0:  // January
-                emoji = '🧡';
+                emoji = '🇱🇻';
                 break;
             case 1:  // February
-                emoji = '🧡';
+                emoji = '🌹';
                 break;
             case 2:  // March
-                emoji = '🧡';
+                emoji = '🔞';
                 break;
             case 3:  // April
                 emoji = '🐇';
                 break;
             case 4:  // May
-                emoji = '🧡';
+                emoji = '🌹';
                 break;
             case 5:  // June
-                emoji = '🧡';
+                emoji = '🚸';
                 break;
             case 6:  // July
-                emoji = '🧡';
+                emoji = '🏟️';
                 break;
             case 7:  // August
-                emoji = '🧡';
+                emoji = '🏖️';
                 break;
             case 8:  // September
-                emoji = '🧡';
+                emoji = '🎶';
                 break;
             case 9:  // October
                 emoji = '🧡';
                 break;
             case 10: // November
-                emoji = '🧡';
+                emoji = '🔞';
                 break;
             case 11: // December
-                emoji = '🧡';
+                emoji = '🧔‍♂️';
                 break;
             default:
                 emoji = '❓'; // Unknown month
