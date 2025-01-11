@@ -139,27 +139,35 @@
     updateTimer();
   </script>
            
-<audio loop id="myAudio">
-  <source src="https://files.catbox.moe/75ougj.m4a" type="audio/mp3">
-  <source src="https://files.catbox.moe/75ougj.m4a" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
-
 <div class="buttons">
-<button onclick="playAudio()" type="button" style="margin-left:10px;">Brutto aspettare? Ascolta qualcosa cliccando qui!</button>
+    <button onclick="playRandomAudio()" type="button" style="margin-left:10px;">Brutto aspettare? Ascolta qualcosa cliccando qui!</button>
+</div>
 
 <script>
-var x = document.getElementById("myAudio"); 
+    // Array of audio links
+    const audioLinks = [
+        "[https://files.catbox.moe/75ougj.m4a](https://files.catbox.moe/75ougj.m4a)",
+        "https://files.catbox.moe/hj9mgw.m4a",
+        // ... add more links here
+    ];
 
-function playAudio() { 
-  x.play(); 
-} 
+    function playRandomAudio() {
+        // Choose a random index from the audioLinks array
+        const randomIndex = Math.floor(Math.random() * audioLinks.length);
 
-function pauseAudio() { 
-  x.pause(); 
-} 
+        // Get the random audio link
+        const randomAudio = audioLinks[randomIndex];
+
+        // Update the source element of the audio element
+        const audioElement = document.getElementById("myAudio");
+        const sourceElement = audioElement.getElementsByTagName("source")[0];
+        sourceElement.setAttribute("src", randomAudio);
+
+        // Play the audio
+        audioElement.load();
+        audioElement.play();
+    }
 </script>
-</div>
 <br>
 <br>
 <a href="/"><span class="emerald-text">Ritorna alla home page</span></a>
