@@ -4,7 +4,7 @@ window.onload = function() {
         "Fernando è sempre capodanno...",
         "Ciao mamma sono famoso",
         "Mi piace la...",
-      	"Fernando ti amo,
+      	"Fernando ti amo",
         "Viva sconosciuta08",
         "Forza Catanzaro",
         "Forza Crotone",
