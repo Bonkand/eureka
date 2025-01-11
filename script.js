@@ -28,6 +28,7 @@ window.onload = function() {
         "Aaron sei mio",
         "Yildiz che giocatore",
         "ella",
+        "Rosa que linda eres...",
         ];
 
          const randomIndex = Math.floor(Math.random() * texts.length);
