@@ -140,24 +140,26 @@
   </script>
 
 <audio loop id="myAudio">
-
-  <source src="https://files.catbox.moe/75ougj.m4a" type="audio/m4a">
-
-  <source src="https://files.catbox.moe/75ougj.m4a" type="audio/mpeg">
-
+  <source src="https://files.catbox.moe/75ougj.m4a" type="audio/m4a">
+  <source src="https://files.catbox.moe/75ougj.m4a" type="audio/mpeg">
   Your browser does not support the audio element.
-
 </audio>
 
-
 <div class="buttons">
+<button onclick="playAudio()" type="button" style="margin-left:10px;">Brutto aspettare? Ascolta questa canzone</button>
 
-<button onclick="playAudio()" type="button" style="margin-left:10px;">Brutto aspettare? Ascolta qualcosa cliccando qui!</button> 
-<br>
-<br>
-<a href="/"><span class="emerald-text">Ritorna alla home page</span></a>
+<script>
+var x = document.getElementById("myAudio"); 
 
- </div>
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+} 
+</script>
+</div>
  
         </section>
       </div>
