@@ -9,7 +9,7 @@
   <meta name="description" content="just visit the site and find out u dumbass">
  <meta name="theme-color" content="#2B2D31">
 
-  <title>Canzoni</title>
+  <title>Andrea Moschella's angle</title>
   <link href="static/css/custom.css" type="text/css" rel="stylesheet">
   <link href="static/css/modesta.css" type="text/css" rel="stylesheet">
   <link href="static/css/emojis.css" type="text/css" rel="stylesheet">
@@ -19,13 +19,6 @@
 </head>
 
   <style>/* Keyframes for gradient animation */
-   body {
-        background-color: #181818;
-        text-align: center;
-        margin: 0; /* Added to remove default body margin */
-        height: 100vh; /* Ensures the body takes full viewport height */
-    }
-   
     @keyframes gradientAnimation {
         0% {
             background-position: 200% 50%; /* Start at the end of the gradient */
@@ -36,14 +29,6 @@
     }
 
     .gradient {
-     text-align: center;
-        height: 500px;
-        line-height: 500px;
- 
-        font-family: "Festive", cursive;
-        margin: 0;
-        display: inline-block;
-        font-size: 3em;
         background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet, violet, indigo, blue, green, yellow, orange, red);
         background-size: 200% 100%; /* Adjust size to match the new keyframes */
         color: transparent;
@@ -52,7 +37,6 @@
         animation: gradientAnimation 5s linear infinite; /* Apply animation with linear timing */
     }
          .title-container {
-          
         display: flex; /* Use flexbox to align items */
         align-items: center; /* Center items vertically */
     }
@@ -65,29 +49,46 @@
   <div class="fullscreen">
     <div class="background" style="background-image: url('/static/images/background.jpg');" id="background-image">
     </div>
+   <div class="center-object">
+      <div class="container">
+        <section class="me unset">
+          <div class="avatar-container">
           </div>
          
          <div class="unset">
           <div class="title-container">
-    <h1 class="title gradient">Andrea Moschella's Songs</h1><h1 class="title2"></h1>
+    <h1 class="title gradient">Andrea Moschella</h1><h1 class="title2"></h1>
            </div>
-  
+</div>
+        </section>
+        <div class="buttons">
+        </div>
+      </div>
+    </div>
+
+      <div id="arrow" class="arrow bounce">
+      </div>
+  </div>
+
   <section class="container" id="information">
        
-      <h1 class="title youtube-text">Ciao sono Andrea</h1>
+      <h1 class="title lemon-text">Me:</h1>
       <div class="info-container">
        <br>
         <p>
-          Ciao sono Andrea parla di me la persona più importante della famiglia <br>
+          Ciao sono <span class="instagram-text">Moschella</span>, sono frocio, amo il <span class="youtube-text">cose</span><span class="marine-blue-text">nza</span> e odio <a href = "https://it.wikipedia.org/wiki/Angelina_Mango"><span class="green-text">Angelina Mango</span></a>. <br>
+  
         </p>
-     
+      </div>
+    </div>
 <audio loop id="myAudio">
-  <source src="https://files.catbox.moe/2cgzpt.m4a" type="audio/m4a">
+  <source src="https://files.catbox.moe/vz0ar0.mp3" type="audio/mp3">
+  <source src="https://files.catbox.moe/v77v8y.m4a" type="audio/m4a">
   Your browser does not support the audio element.
 </audio>
 
 <div class="buttons">
-<button onclick="playAudio()" type="button" style="margin-left:10px;">Ascoltala</button>
+<button onclick="playAudio()" type="button" style="margin-left:10px;">🕺🪩🕺</button>
 
 <script>
 var x = document.getElementById("myAudio"); 
@@ -101,9 +102,11 @@ function pauseAudio() {
 } 
 </script>
 </div>
- </div>
-    </div>
+
   </section>
+       <p style="text-align: center">
+        <img src="static/images/fire.png" height="30" width="30" alt="Firecamp">
+        </p>
 
 </body>
 
